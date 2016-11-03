@@ -65,7 +65,7 @@
 	
 	<form action="https://getsimpleform.com/messages?form_api_token=b13577ae4c4860ed5b3441898638804b" method="post">
 		<!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-		<input type='hidden' name='redirect_to' value='<the complete return url e.g. http://pressxto.com/thank-you.html>' />
+		<input type='hidden' name='redirect_to' value='http://pressxto.com/thank-you.html' />
 		<!-- all your input fields here.... -->
 		
 		<div class="main">
@@ -617,7 +617,7 @@
 		$(document ).ready(function(){
 			$('.button-collapse').sideNav();
 			$('.button-sidebar').sideNav({
-				menuWidth: 390, // Default is 240
+				menuWidth: '100%', // Default is 240
 				edge: 'right', // Choose the horizontal origin
 				closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
 			});
