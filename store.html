@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="thanks">
+<html lang="en" class="store">
 <head>
 	<!--Import Google Icon Font-->
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -38,40 +38,65 @@
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
 
-	<div class="navbar-fixed">
-		<nav>
-			<div class="nav-wrapper">
-				<h1 class="site-title"><a href="/" class="brand-logo">Press X to</a></h1>
-				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-				<ul class="right hide-on-med-and-down">
-					<li><a href="#action-adventure">Action-adventure</a></li>
-					<li><a href="#shooter">Shooter</a></li>
-					<li><a href="#rpg">RPG</a></li>
-					<li><a href="#sports">Sports</a></li>
-					<li class="active"><a href="/about">WTF's This?</a></li>
-				</ul>
-				<ul class="side-nav" id="mobile-demo">
-					<li><a href="/">Home</a></li>
-					<li><a href="#!">Visit Store</a></li>
-					<li><a href="/about">WTF's This?</a></li>
-				</ul>
-			</div>
-		</nav>
-	</div>
+	<header class="valign-wrapper">
+		<div class="topbar">
+			<a class="brand-logo icon" href="/">Press X to</a>
+			<a class="right btn-flat" href="/">Back Home</a>
+		</div>
+		<h2 class="valign light">How do you want to play?</h1>
+	</header>
 
 	<div class="">
-		<div class="">
+		<div class="tabs-wrap z-depth-1">
 			<ul class="tabs">
 				<li class="tab disabled"><a href="#tab1">Games</a></li>
 				<li class="tab"><a class="active" href="#tab2">Consoles</a></li>
-				<li class="tab"><a href="#tab3">Accessories</a></li>
+				<li class="tab disabled"><a href="#tab3">Accessories</a></li>
 				<li class="tab disabled"><a href="#tab4">Merchandise</a></li>
 			</ul>
 		</div>
-		<div id="tab1" class="">Test 1</div>
-		<div id="tab2" class="">Test 2</div>
-		<div id="tab3" class="">Test 3</div>
-		<div id="tab4" class="">Test 4</div>
+		<div id="tab1" class="tab-panel">Test 1</div>
+
+		<div id="tab2" class="tab-panel">
+			<ul class="collection">
+				<li class="collection-item avatar">
+					<img src="imgs/console-ps4-uncharted.jpg" alt="" class="product-image">
+
+					<h5 class="">Uncharted 4 PlayStation<sup>®</sup>4 Bundle</h5>
+					<p>The new slim PlayStation<sup>®</sup>4 opens the door to extraordinary journeys through immersive new gaming worlds and a deeply connected gaming community.</p>
+					<p>Includes a new slim 500GB PlayStation®4 system, a matching DualShock 4 Wireless Controller, and Uncharted 4: A Thief's End on Blu-ray disc.</p>
+					<p class="price-block"><span class="grey-text">Price:</span> <span class="price">₦163000</span> &amp; <b>FREE Shipping anywhere in Nigeria</b>.</p>
+
+					<div class="secondary-content">
+						<a href="#!" class="waves-effect waves-light btn"><i class="material-icons right">shopping_cart</i>Pay on delivery</a>
+						<div class="spacing-base">₦163000 (No savings)</div>
+						<!-- <div class="a-divider a-divider-break a-spacing-base"><span>or Pay Online</span></div>
+						<a href="#!" class="waves-effect waves-light btn-large"><i class="material-icons right">credit_card</i>Buy Now</a>
+						<div class="spacing-base">₦160000 <strike>₦163000</strike> (Save ₦3000)</div> -->
+					</div>
+				</li>
+				<li class="collection-item avatar">
+					<img src="imgs/console-ps4.jpg" alt="" class="product-image">
+
+					<h5 class="">Uncharted 4 PlayStation<sup>®</sup>4 Bundle</h5>
+					<p>The new slim PlayStation<sup>®</sup>4 opens the door to extraordinary journeys through immersive new gaming worlds and a deeply connected gaming community.</p>
+					<p>Includes a new slim 500GB PlayStation®4 system, a matching DualShock 4 Wireless Controller, and Uncharted 4: A Thief's End on Blu-ray disc.</p>
+					<p class="price-block"><span class="grey-text">Price:</span> <span class="price">₦153000</span> &amp; <b>FREE Shipping anywhere in Nigeria</b>.</p>
+
+					<div class="secondary-content">
+						<a href="#!" class="waves-effect waves-light btn"><i class="material-icons right">shopping_cart</i>Pay on delivery</a>
+						<div class="spacing-base">₦153000 (No savings)</div>
+						<!-- <div class="a-divider a-divider-break a-spacing-base"><span>or Pay Online</span></div>
+						<a href="#!" class="waves-effect waves-light btn-large"><i class="material-icons right">credit_card</i>Buy Now</a>
+						<div class="spacing-base">₦150000 <strike>₦153000</strike> (Save ₦3000)</div> -->
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<div id="tab3" class="tab-panel">Test 3</div>
+
+		<div id="tab4" class="tab-panel">Test 4</div>
 	</div>
 
 	<footer class="page-footer">
@@ -94,7 +119,7 @@
 		<div class="footer-copyright">
 			<div class="grey-text">
 				© 2016. All rights reserved.
-				<a class="grey-text right" href="#!">Visit Store</a>
+				<a href="/about" class="grey-text right" href="#!">WTF's This?</a>
 			</div>
 		</div>
 	</footer>
@@ -104,14 +129,9 @@
 	<script type="text/javascript" src="js/materialize.min.js"></script>
 	<script>
 		$(document ).ready(function(){
-			$('.button-collapse').sideNav();
-			$('.button-sidebar').sideNav({
-				menuWidth: 390, // Default is 240
-				edge: 'right', // Choose the horizontal origin
-				closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-			});
-			$('.scrollspy').scrollSpy();
-			$('ul.tabs').tabs();
+			Date.now = function now() {
+				return new Date().getTime();
+			};
 		});
 	</script>
 </html>

@@ -15,7 +15,7 @@
   	// top: 1em;
   	bottom: 3em;
   }
-  max-width: 1066px;
+  max-width: 1152px;
   margin-right: auto;
   margin-left: auto;
 
@@ -23,7 +23,7 @@
 
   h3 {
 		margin-top: 0;
-  	margin-left: 1rem;
+  	margin-left: 8px;
   	font-weight: 300;
   	color: #000033;
   }
@@ -32,8 +32,8 @@
 		overflow: hidden;
 		padding: {
 			top: 1.5em;
-			right: 1em;
-			left: 1em;
+			right: 30px;
+			left: 30px;
 		}
 
 		> div {
@@ -410,3 +410,201 @@ img {
 .sidebar {
 	max-width: 390px;
 }
+
+.store {
+	header.valign-wrapper {
+		min-height: 210px;
+    background-image: url(../imgs/store-header.jpg);
+    position: relative;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media only screen and (max-width : 768px) {
+	    padding-top: 78px;
+	    padding-bottom: 13px;
+    }
+
+    .valign.light {
+    	color: #fff;
+    	text-align: center;
+			padding-right: 32px;
+			padding-left: 32px;
+    }
+	}
+
+	.topbar {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding-top: 26px;
+		padding-right: 32px;
+		padding-bottom: 13px;
+		padding-left: 32px;
+
+		.btn-flat {
+	    color: #fff;
+		  background-color: rgba(255,255,255,0);
+		  border: 2px solid rgba(255,255,255,0.43);
+		  line-height: 32px;
+      padding: 0 1rem;
+		}
+	}
+
+	.brand-logo.icon {
+	  height: 39px;
+	  width: 39px;
+	  text-indent: 100%;
+	  overflow: hidden;
+	  background-image: url(../imgs/logo-icon.png);
+	  background-size: 39px;
+	  background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    white-space: nowrap;
+    float: left;
+	}
+}
+
+.tabs-wrap {
+	overflow-x: scroll;
+}
+
+.tabs {
+  height: 65px;
+  min-width: 613px;
+
+	.tab {
+		line-height: 65px;
+    height: 65px;
+
+		a {
+		  color: #0066cc;
+		  padding: 0 24px;
+
+		  &:hover {
+		    color: #000033;
+			}
+		}
+
+		&.disabled a {
+	    color: rgba(0,102,204,0.4);
+	  }
+	}
+
+  .indicator {
+    height: 4px;
+    background-color: #0066cc;
+	}
+}
+
+.tab-panel {
+	max-width: 1152px;
+  margin: 52px auto;
+  padding-right: 30px;
+  padding-left: 30px;
+
+  .img-wrap img {
+  	vertical-align: top;
+    max-width: 100%;
+  }
+}
+
+.price-block {
+  font-size: 13px;
+}
+
+.price {
+	font-size: 20px!important;
+  color: #b12704!important;
+}
+
+.collection .collection-item.avatar {
+  min-height: 220px; // 280px;
+  padding-left: 280px;
+  position: relative;
+  padding-right: 260px;
+
+  p {
+	  margin-top: 13px;
+	  margin-bottom: 0;
+	}
+
+	.secondary-content {
+		text-align: center;
+		top: 63px;
+
+		.btn,
+		.btn-large {
+			width: 100%;
+		}
+
+		.spacing-base {
+			color: #555;
+	    font-size: 12px;
+	    margin-top: 13px;
+	    line-height: 1.5!important;
+		}
+	}
+}
+
+.a-divider.a-divider-break {
+	text-align: center;
+  position: relative;
+  top: 2px;
+  padding-top: 1px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  line-height: 0;
+
+  &:after {
+	  content: "";
+	  width: 100%;
+	  background-color: transparent;
+	  display: block;
+	  height: 1px;
+	  border-top: 1px solid #e7e7e7;
+	  position: absolute;
+	  top: 50%;
+	  margin-top: -1px;
+	  z-index: 1;
+	}
+
+	span {
+		line-height: 1;
+    font-size: 12px;
+    color: #767676;
+    font-weight: 400;
+    z-index: 2;
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+    padding: 0 8px 0 7px;
+	}
+}
+
+.product-image {
+	position: absolute;
+  width: 240px;
+  height: 200px;
+  overflow: hidden;
+  left: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+// @media only screen and (min-width: 768px) {
+// 	.tab-panel {
+// 		display: flex;
+// 		justify-content: space-between;
+// 	}
+
+// 	.item {
+// 		display: inline-block;
+// 		width: 50%;
+// 		max-width: 520px;
+// 	}
+// }
+
