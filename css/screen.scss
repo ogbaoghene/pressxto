@@ -302,6 +302,35 @@ footer.page-footer {
  //  	margin-right: 0;
  //  }
 
+	.nav-wrapper {
+		padding-right: 0.533rem;
+		padding-left: 0.533rem;
+	}
+
+	.parallax-container {
+    padding-top: 52px;
+    height: auto;
+
+    .subtitle {
+	    margin-bottom: 39px;
+	  }
+
+	  .btn-flat {
+	    margin-left: 0;
+	  }
+	}
+
+	.main {
+		section {
+	    padding-right: 0.25em;
+	    padding-left: 0.25em;
+		}
+
+		h3 {
+			margin-left: 0.533rem;
+		}
+	}
+
   .jump-to-cta {
 		display: block;
 	}
@@ -331,6 +360,10 @@ nav {
   a.active {
   	color: #000033;
 	}
+}
+
+nav a {
+  color: #0066cc;
 }
 
 a {
