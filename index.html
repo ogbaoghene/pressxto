@@ -14,8 +14,8 @@
 	<!--Let browser know website is optimized for mobile-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-	<title>What do you want to play — Press x to game on!</title>
-	<meta name="description" content="Press x to game on with the No. 1 gaming community for African gamers across the continent. Built for gamers by gamers."> 
+	<title>What do you want to play next — PressXto game on!</title>
+	<meta name="description" content="PressXto Game On! No more worries about the cost of getting, the trouble of selling and the hassle of trading your video games. Built for gamers by gamers."> 
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
@@ -41,14 +41,14 @@
 	<div class="navbar-fixed">
 		<nav>
 			<div class="nav-wrapper">
-				<h1 class="site-title"><a href="/" class="brand-logo">Press X to</a></h1>
+				<h1 class="site-title"><a href="/" class="brand-logo">PressXto</a></h1>
 				<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 				<ul class="right hide-on-med-and-down">
 					<li><a href="#action-adventure">Action-adventure</a></li>
 					<li><a href="#shooter">Shooter</a></li>
 					<li><a href="#rpg">RPG</a></li>
 					<li><a href="#sports">Sports</a></li>
-					<!-- <li class="active"><a href="/about">WTF's This?</a></li> -->
+					<li><a href="/about">WTF's This?</a></li>
 				</ul>
 				<ul class="side-nav" id="mobile-demo">
 					<li><a href="/">Home</a></li>
@@ -63,18 +63,20 @@
 		<div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <h2 class="title"><b>Pick and choose the games you want to play next</b></h2>
-                    <p class="subtitle">With no more worries about getting, selling or trading video games, how will you spend your new found time? Playing a lot more games of course. Get started now!</p>
+                    <h2 class="title"><b>Imagine being able to play four games for the price of one</b></h2>
+                    <p class="subtitle">No more worries about the cost of getting, the trouble of selling and the hassle of trading your video games. How will you spend your new found time? Playing a lot more games of course. Now tell us the games you want to play next!</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12">
-                    <a class="btn-large waves-effect waves-light" href="#action-adventure">GET STARTED</a>
+                    <a class="btn-large waves-effect waves-light" href="#instruct">GET STARTED</a>
                     <!-- <a class="btn-large btn-flat" href="#!">VISIT STORE</a> -->
                 </div>
             </div>
         </div>
 	</div>
+
+	<div id="instruct" class="scrollspy"><p class="container">Pick the games you want to play next</p></div>
 	
 	<form action="https://getsimpleform.com/messages?form_api_token=cc62268a1d677252a2aac1cd7ac5b48c" method="post">
 		<!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
@@ -113,10 +115,31 @@
 					</p>
 				</div>
 				<div class="card-panel hoverable">
+					<img src="imgs/d4-dark-dreams-don't-die.jpg" alt="" width="124">
+					<p>D4: Dark Dreams Don't Die<br>
+						<input type="checkbox" id="d4DarkDreamsDontDie" name="d4DarkDreamsDontDie" value="yes" />
+						<label for="d4DarkDreamsDontDie">Want it</label>
+					</p>
+				</div>
+				<div class="card-panel hoverable">
+					<img src="imgs/dead-rising-4.jpg" alt="" width="124">
+					<p>Dead Rising 4<br>
+						<input type="checkbox" id="deadRising4" name="deadRising4" value="yes" />
+						<label for="deadRising4">Want it</label>
+					</p>
+				</div>
+				<div class="card-panel hoverable">
 					<img src="imgs/dishonored2.jpg" alt="" width="124">
 					<p>Dishonored 2<br>
 						<input type="checkbox" id="dishonored2" name="dishonored2" value="yes" />
 						<label for="dishonored2">Want it</label>
+					</p>
+				</div>
+				<div class="card-panel hoverable">
+					<img src="imgs/dying-light.jpg" alt="" width="124">
+					<p>Dying Light<br>
+						<input type="checkbox" id="dyingLight" name="dyingLight" value="yes" />
+						<label for="dyingLight">Want it</label>
 					</p>
 				</div>
 				<div class="card-panel hoverable">
@@ -141,10 +164,24 @@
 					</p>
 				</div>
 				<div class="card-panel hoverable">
+					<img src="imgs/firewatch.jpg" alt="" width="124">
+					<p>Firewatch<br>
+						<input type="checkbox" id="firewatch" name="firewatch" value="yes" />
+						<label for="firewatch">Want it</label>
+					</p>
+				</div>
+				<div class="card-panel hoverable">
 					<img src="imgs/gta-v.jpg" alt="" width="124">
 					<p>Grand Theft Auto V<br>
 						<input type="checkbox" id="GTAV" name="GTAV" value="yes" />
 						<label for="GTAV">Want it</label>
+					</p>
+				</div>
+				<div class="card-panel hoverable">
+					<img src="imgs/hitman.jpg" alt="" width="124">
+					<p>Hitman<br>
+						<input type="checkbox" id="hitman" name="hitman" value="yes" />
+						<label for="hitman">Want it</label>
 					</p>
 				</div>
 				<div class="card-panel hoverable">
@@ -187,6 +224,34 @@
 					<p>The Last of Us Remastered<br>
 						<input type="checkbox" id="theLastofUsRemastered" name="theLastofUsRemastered" value="yes" />
 						<label for="theLastofUsRemastered">Want it</label>
+					</p>
+				</div>
+				<div class="card-panel hoverable">
+					<img src="imgs/lego-dimensions.jpg" alt="" width="124">
+					<p>Lego Dimensions<br>
+						<input type="checkbox" id="legoDimensions" name="legoDimensions" value="yes" />
+						<label for="legoDimensions">Want it</label>
+					</p>
+				</div>
+				<div class="card-panel hoverable">
+					<img src="imgs/lego-jurassic-world.jpg" alt="" width="124">
+					<p>Lego Jurassic World<br>
+						<input type="checkbox" id="legoJurassicWorld" name="legoJurassicWorld" value="yes" />
+						<label for="legoJurassicWorld">Want it</label>
+					</p>
+				</div>
+				<div class="card-panel hoverable">
+					<img src="imgs/lego-marvel's-avengers.jpg" alt="" width="124">
+					<p>Lego Marvel's Avengers<br>
+						<input type="checkbox" id="legoMarvelsAvengers" name="legoMarvelsAvengers" value="yes" />
+						<label for="legoMarvelsAvengers">Want it</label>
+					</p>
+				</div>
+				<div class="card-panel hoverable">
+					<img src="imgs/lego-star-wars.jpg" alt="" width="124">
+					<p>Lego Star Wars: The Force Awakens<br>
+						<input type="checkbox" id="legoStarWars" name="legoStarWars" value="yes" />
+						<label for="legoStarWars">Want it</label>
 					</p>
 				</div>
 				<div class="card-panel hoverable">
@@ -253,6 +318,13 @@
 					</p>
 				</div>
 				<div class="card-panel hoverable">
+					<img src="imgs/quantum-break.jpg" alt="" width="124">
+					<p>Quantum Break<br>
+						<input type="checkbox" id="quantumBreak" name="quantumBreak" value="yes" />
+						<label for="quantumBreak">Want it</label>
+					</p>
+				</div>
+				<div class="card-panel hoverable">
 					<img src="imgs/resident-evil-7.jpg" alt="" width="124">
 					<p>RESIDENT EVIL 7 biohazard<br>
 						<input type="checkbox" id="RE7Biohazard" name="RE7Biohazard" value="yes" />
@@ -260,10 +332,24 @@
 					</p>
 				</div>
 				<div class="card-panel hoverable">
+					<img src="imgs/recore.jpg" alt="" width="124">
+					<p>ReCore<br>
+						<input type="checkbox" id="recore" name="recore" value="yes" />
+						<label for="recore">Want it</label>
+					</p>
+				</div>
+				<div class="card-panel hoverable">
 					<img src="imgs/tomb-raider.jpg" alt="" width="124">
 					<p>Rise of the Tomb Raider<br>
 						<input type="checkbox" id="tombRaider" name="tombRaider" value="yes" />
 						<label for="tombRaider">Want it</label>
+					</p>
+				</div>
+				<div class="card-panel hoverable">
+					<img src="imgs/saints-row-gat-out-of-hell.jpg" alt="" width="124">
+					<p>Saints Row: Gat out of Hell<br>
+						<input type="checkbox" id="saintsRowGatOutOfHell" name="saintsRowGatOutOfHell" value="yes" />
+						<label for="saintsRowGatOutOfHell">Want it</label>
 					</p>
 				</div>
 				<div class="card-panel hoverable">
@@ -295,7 +381,7 @@
 					</p>
 				</div>
 
-				<p class="jump-to-cta"><a href="#call-to-action" class="waves-effect waves-teal btn-flat">Done?</a></p>
+				<p class="jump-to-cta"><a href="#call-to-action" class="waves-effect waves-teal btn-flat">Done Picking?</a></p>
 				<div class="divider"></div>
 			</section>
 
@@ -359,10 +445,38 @@
 					</p>
 				</div>
 				<div class="card-panel hoverable">
+					<img src="imgs/gears-of-war-4.jpg" alt="" width="124">
+					<p>Gears of War 4<br>
+						<input type="checkbox" id="gearsOfWar4" name="gearsOfWar4" value="yes" />
+						<label for="gearsOfWar4">Want it</label>
+					</p>
+				</div>
+				<div class="card-panel hoverable">
+					<img src="imgs/homefront-the-revolution.jpg" alt="" width="124">
+					<p>Homefront: The Revolution<br>
+						<input type="checkbox" id="homefrontTheRevolution" name="homefrontTheRevolution" value="yes" />
+						<label for="homefrontTheRevolution">Want it</label>
+					</p>
+				</div>
+				<div class="card-panel hoverable">
+					<img src="imgs/overwatch.jpg" alt="" width="124">
+					<p>Overwatch<br>
+						<input type="checkbox" id="overwatch" name="overwatch" value="yes" />
+						<label for="overwatch">Want it</label>
+					</p>
+				</div>
+				<div class="card-panel hoverable">
 					<img src="imgs/Star-Wars-Battlefront.jpg" alt="" width="124">
 					<p>STAR WARS™ Battlefront™<br>
 						<input type="checkbox" id="starWarsBattlefront" name="starWarsBattlefront" value="yes" />
 						<label for="starWarsBattlefront">Want it</label>
+					</p>
+				</div>
+				<div class="card-panel hoverable">
+					<img src="imgs/titanfall.jpg" alt="" width="124">
+					<p>Titanfall®<br>
+						<input type="checkbox" id="titanfall" name="titanfall" value="yes" />
+						<label for="titanfall">Want it</label>
 					</p>
 				</div>
 				<div class="card-panel hoverable">
@@ -401,7 +515,7 @@
 					</p>
 				</div>
 
-				<p class="jump-to-cta"><a href="#call-to-action" class="waves-effect waves-teal btn-flat">Done?</a></p>
+				<p class="jump-to-cta"><a href="#call-to-action" class="waves-effect waves-teal btn-flat">Done Picking?</a></p>
 				<div class="divider"></div>
 			</section>
 
@@ -413,6 +527,13 @@
 					<p>Bloodborne<br>
 						<input type="checkbox" id="bloodborne" name="bloodborne" value="yes" />
 						<label for="bloodborne">Want it</label>
+					</p>
+				</div>
+				<div class="card-panel hoverable">
+					<img src="imgs/dark-souls-2.jpg" alt="" width="124">
+					<p>Dark Souls II<br>
+						<input type="checkbox" id="darkSouls2" name="darkSouls2" value="yes" />
+						<label for="darkSouls2">Want it</label>
 					</p>
 				</div>
 				<div class="card-panel hoverable">
@@ -465,7 +586,7 @@
 					</p>
 				</div>
 
-				<p class="jump-to-cta"><a href="#call-to-action" class="waves-effect waves-teal btn-flat">Done?</a></p>
+				<p class="jump-to-cta"><a href="#call-to-action" class="waves-effect waves-teal btn-flat">Done Picking?</a></p>
 				<div class="divider"></div>
 			</section>
 
@@ -484,6 +605,27 @@
 					<p>FIFA 17<br>
 						<input type="checkbox" id="FIFA17" name="FIFA17" value="yes" />
 						<label for="FIFA17">Want it</label>
+					</p>
+				</div>
+				<div class="card-panel hoverable">
+					<img src="imgs/forza-horizon-2.jpg" alt="" width="124">
+					<p>Forza Horizon 2<br>
+						<input type="checkbox" id="forzaHorizon2" name="forzaHorizon2" value="yes" />
+						<label for="forzaHorizon2">Want it</label>
+					</p>
+				</div>
+				<div class="card-panel hoverable">
+					<img src="imgs/forza-horizon-3.jpg" alt="" width="124">
+					<p>Forza Horizon 3<br>
+						<input type="checkbox" id="forzaHorizon3" name="forzaHorizon3" value="yes" />
+						<label for="forzaHorizon3">Want it</label>
+					</p>
+				</div>
+				<div class="card-panel hoverable">
+					<img src="imgs/forza-motorsport-6.jpg" alt="" width="124">
+					<p>Forza Motorsport 6<br>
+						<input type="checkbox" id="forzaMotorsport6" name="forzaMotorsport6" value="yes" />
+						<label for="forzaMotorsport6">Want it</label>
 					</p>
 				</div>
 				<div class="card-panel hoverable">
@@ -536,6 +678,13 @@
 					</p>
 				</div>
 				<div class="card-panel hoverable">
+					<img src="imgs/steep.jpg" alt="" width="124">
+					<p>Steep<br>
+						<input type="checkbox" id="steep" name="steep" value="yes" />
+						<label for="steep">Want it</label>
+					</p>
+				</div>
+				<div class="card-panel hoverable">
 					<img src="imgs/WWE2K16.jpg" alt="" width="124">
 					<p>WWE 2K16<br>
 						<input type="checkbox" id="WWE2K16" name="WWE2K16" value="yes" />
@@ -553,44 +702,35 @@
 
 			<div id="call-to-action" class="cta scrollspy">
 				<button data-activates="slide-out" class="btn-large waves-effect waves-light button-sidebar" type="submit" name="action">Yes, I'm Done!</button>
-				<div><a href="#action-adventure" class="waves-effect waves-teal btn-flat">Back to top</a></div>
 			</div>
 		</div>
 		
 		<div id="slide-out" class="side-nav sidebar">
 			<div class="userView">
-				<img class="background" src="imgs/controllers.jpg" width="390">
-				<a><img class="circle" src="imgs/ogb.jpg"></a>
-				<a><span class="white-text name">Questions? Talk to Ogba</span></a>
-				<a href="tel:08039219577"><span class="white-text email">Call 0803 921 9577</span></a>
-			</div>
-			<div class="row">
-				<p class="col s12">We contact you at?</p>	
-		        <div class="input-field col s12">
-					<input id="email" type="email" name="email" required class="validate">
-					<label for="email">Email</label>
-				</div>
-				<div class="col s12">
-					<div class="row nested">
-						<div class="input-field col s6">
-							<input id="firstName" type="text" name="firstName" required class="validate">
-							<label for="firstName">First Name</label>
-						</div>
-						<div class="input-field col s6">
-							<input id="lastName" type="text" name="lastName" required class="validate">
-							<label for="lastName">Last Name</label>
-						</div>
-					</div>
+				<div>
+					<a><img class="circle" src="imgs/ogb.jpg"></a>
+					<a><span class="white-text name">Almost done!</span></a>
+					<a><span class="white-text email">Only a few more steps to go.</span></a>
 				</div>
 			</div>
 			<div class="row">
-				<p class="col s12">Looking for games that aren't on our list?<br>Suggest them below.</p>
+				<p class="col s12">Are there games you would like to play that weren’t on our list? Suggest them below.</p>
 				<div class="input-field col s12">
 					<textarea id="suggestions" name="suggestions" class="materialize-textarea"></textarea>
 					<label for="suggestions">Suggestions</label>
 				</div>
+		        <div class="input-field col s12">
+					<input id="email" type="email" name="email" required class="validate">
+					<label for="email">Enter email</label>
+				</div>
+				<p class="col s12">
+					<input type="checkbox" id="emailOptIn" name="emailOptIn" value="yes" class="filled-in" checked="checked" />
+					<label for="emailOptIn">Let’s tell you more about this</label>
+				</p>
+			</div>
+			<div class="row">
 				<div class="col s12">
-					<button class="btn waves-effect waves-light btn-large" type="submit" name="action">Game on!
+					<button class="btn waves-effect waves-light btn-large" type="submit" name="action">Send your wishlist
 						<i class="material-icons right">send</i>
 					</button>
 				</div>
@@ -598,15 +738,19 @@
 		</div>
 
 	</form>
+		
+	<div class="fixed-action-btn">
+		<a href="#instruct" class="scrollspy btn-floating btn-large waves-effect waves-light red"><i class="material-icons">expand_less</i></a>
+	</div>
 
 	<footer class="page-footer">
-		<div class="">
+		<div class="inner">
 			<div class="row">
-				<div class="col l4 s12">
-					<h5 class="">Game On!</h5>
-					<p class="grey-text">With the No. 1 gaming community for African gamers across the continent. Built for gamers by gamers.</p>
+				<div class="col l3 s12">
+					<h5 class="logo-alt">Game On!</h5>
+					<p class="grey-text">Built for gamers by gamers</p>
 				</div>
-				<div class="col l4 offset-l4 s12">
+				<div class="col l3 offset-l6 s12">
 					<h5 class="">Connect</h5>
 					<ul class="social">
 						<li><a class="grey-text text-lighten-3" href="https://twitter.com/presssxto" target="_blank">Twitter</a></li>
@@ -619,14 +763,26 @@
 		<div class="footer-copyright">
 			<div class="grey-text">
 				© 2016. All rights reserved.
-				<a href="/about" class="grey-text right" href="#!">WTF's This?</a>
+				<a href="/about" class="grey-text right">WTF's This?</a>
 			</div>
 		</div>
 	</footer>
 
+	<div id="modal1" class="modal">
+		<div class="modal-content">
+			<h4>Great Choice!</h4>
+			<p>Now go ahead and pick as many other games as you like.<br>Click the <b>"YES, I'M DONE PICKING!"</b> button at the bottom of the page when you're finished.</p>
+		</div>
+		<div class="modal-footer">
+			<button class="modal-action modal-close waves-effect waves-green btn-flat">Keep picking</button>
+			<button data-activates="slide-out" class="modal-action modal-close waves-effect waves-teal btn-flat button-sidebar">Thanks, I'm done</button>
+		</div>
+	</div>
+
 </body>
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
-	<script type="text/javascript" src="js/materialize.min.js"></script>
+ 	<script src="js/materialize.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 	<script>
 		$(document ).ready(function(){
 			$('.button-collapse').sideNav();
@@ -635,10 +791,40 @@
 				edge: 'right', // Choose the horizontal origin
 				closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
 			});
-			$('.scrollspy').scrollSpy();
+			$('.scrollspy').scrollSpy({scrollOffset: 64});
+
+			$('.main').on('click', '.card-panel input[type=checkbox]', function() {
+				$('#modal1').openModal();
+				$('.main').off('click', '.card-panel input[type=checkbox]')
+			});
 
 			var random = Math.round(Math.random()*4) + 1;
 			$('#parallax').css('background-image', 'url(imgs/parallax' + random + '.jpg' + ')');
+
+			$('#instruct').waypoint(function(direction) {
+				if (direction === 'down') {
+					$('.fixed-action-btn').addClass('visible')
+				};
+
+				if (direction === 'up') {
+					$('.fixed-action-btn').removeClass('visible')
+				}
+			});
+
+			// $('#call-to-action').waypoint(function(direction) {
+				// $('#call-to-action').animate({
+				// 	height: $('#call-to-action').get(0).scrollHeight
+				// }, 1000, function(){
+				// 	$(this).height('auto');
+				// })
+				// var height = $('#call-to-action').get(0).scrollHeight
+				// $('#call-to-action').height(height)
+			// 	if (direction === 'down') {
+			// 		$('#call-to-action .wrapper').addClass('slideInRight')
+			// 	}
+			// }, {
+			// 	offset: '60%'
+			// });
 		});
 	</script>
 </html>
